@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Special Surprise ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #ff6a88, #ff99ac);
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            margin-top: 120px;
+            font-size: 40px;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 15px;
+        }
+
+        #yesBtn {
+            background-color: white;
+            color: #ff4b5c;
+        }
+
+        #noBtn {
+            background-color: #ff4b5c;
+            color: white;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hey ❤️</h1>
+    <h2>Will You Be My Valentine? 💖</h2>
+
+    <button id="yesBtn" onclick="goToNextPage()">YES ❤️</button>
+    <button id="noBtn" onmouseover="moveNo()">NO 😜</button>
+
+    <script>
+        function moveNo() {
+            const noBtn = document.getElementById("noBtn");
+            noBtn.style.top = Math.random() * window.innerHeight + "px";
+            noBtn.style.left = Math.random() * window.innerWidth + "px";
+        }
+
+        function goToNextPage() {
+            window.location.href = "happy.html";
+        }
+    </script>
+
+</body>
+</html>
